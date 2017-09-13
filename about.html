@@ -70,28 +70,35 @@
 
     <body>
         <nav>
-            <header>Thomas Floyd, The Site</header>
-                <ul>
-                    <li>
+            <header>Thomas Floyd, The Site
+            </header>
+            <ul>
+                <li>
                         <a href="index.html">Home</a>
-                    </li>
-                    <li>
+                </li>
+                <li>
                         <a href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li>
+                </li>
+                <li>
                         <a href="about.html">About Me</a>
-                    </li>
+                </li>
             </ul>
         </nav>
         
         <main>
             <div class="content">
-                <h1>Portfolio</h1>
-                <ul id="portfolio">
+                <h1>About Me
+                </h1>
+                <ul>
+                    <li>Lousiana Resident</li>
+                    <li>Currently a Student at Destrehan High School </li>
+                    <li>Programming Captain of FRC Team 3039</li>
+                    <li>Sound Technician for New Life Tabernacle</li>
+                    <li>Owner of a Wonderful Boston Terrier, named Lola</li>
+                    <li>Can solve a Rubiks Cube in a Minute</li>
+                    <li>Still Single (Ladies?)</li>
                 </ul>
             </div>
         </main>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script id="portfolioScript">$(document).ready(function() {$.getJSON('projects/projects.json').then(function(data) { data.projects.forEach(function(project){ $('#portfolio').append('<li><a href="projects/' + project.name + '/">' + project.title + ' : ' + project.description + '</a></li>'); }); }); });</script>
     </body>
 </html>
